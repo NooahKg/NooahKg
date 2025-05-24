@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Noah Kage | Mediengestalter</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -61,9 +61,9 @@
   </main>
 
   <div class="player-bar">
-    <button onclick="navigateSection(-1)">⏮️</button>
-    <button onclick="togglePlay()" id="play-btn">▶️</button>
-    <button onclick="navigateSection(1)">⏭️</button>
+    <button onclick="navigateSection(-1)" aria-label="Zurück">⏮️</button>
+    <button onclick="togglePlay()" id="play-btn" aria-label="Play/Pause">▶️</button>
+    <button onclick="navigateSection(1)" aria-label="Weiter">⏭️</button>
     <span id="current-section">Home</span>
   </div>
 
