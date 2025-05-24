@@ -1,4 +1,123 @@
-/* Player-Bar Styling */
+/* Grundlayout */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+nav .logo {
+  font-size: 2rem;
+  color: #1DB954;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+nav a {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #1DB954;
+}
+
+/* Inhaltsbereich */
+main {
+  margin-left: 220px;
+  padding: 2rem;
+}
+
+header {
+  background: linear-gradient(135deg, #1DB954, #1ed760);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.bio-box {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  color: #ddd;
+}
+
+/* Sektionen */
+.skills, .projects, .contact {
+  margin-bottom: 3rem;
+}
+
+.skills div {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+}
+
+.projects img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+}
+
+/* Formular */
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+form button {
+  background-color: #1DB954;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #1ed760;
+}
+
+/* Player */
 .player-bar {
   position: fixed;
   bottom: 0;
@@ -34,7 +153,16 @@
   color: #999;
 }
 
-/* Scrollbar Spotify Style */
+/* Footer */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -47,13 +175,3 @@
 ::-webkit-scrollbar-track {
   background: #121212;
 }
-
-/* Bio Box */
-.bio-box {
-  background-color: #1c1c1c;
-  border: 1px solid #333;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-top: 1.5rem;
-}
-
