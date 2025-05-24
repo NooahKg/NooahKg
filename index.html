@@ -3,41 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Start – Noah Kage</title>
+  <title>Noah Kage | Mediengestalter</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <body>
-    
-  <div class="corner-profile">
-    <img src="img/NKfrei.png" alt="Profilbild Noah">
- 
-  
-  </div>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="logo">Noah Kage</div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Über mich</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="projekte.html">Projekte</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main class="main-content">
-      <section class="hero section visible">
-        <div class="label">Mediengestalter (Schwerpunkt Print)</div>
-        <h1>Noah Kage</h1>
-      </section>
-      <section class="section visible">
-        <h2>Über mich</h2>
-        <p>Ich bin ein kreativer Mediengestalter mit Fokus auf hochwertige Printprodukte. Hier findest du eine Auswahl meiner Arbeiten und Fähigkeiten.</p>
-        <img src="img/dein-bild.jpg" alt="Noah Kage" style="max-width:300px; border-radius: 10px; margin-top: 1rem;">
-      </section>
-    </main>
-  </div>
+  <nav>
+    <div class="logo">🎧</div>
+    <a href="#about">Home</a>
+    <a href="#skills">Über mich</a>
+    <a href="#projects">Projekte</a>
+    <a href="#contact">Profil</a>
+  </nav>
+
+  <main>
+    <header id="about">
+      <h1>NOAH KAGE</h1>
+      <p>Mediengestalter (Printbereich)</p>
+    </header>
+
+    <section id="skills" class="skills">
+      <h2>Tools & Skills</h2>
+      <div>Adobe Illustrator</div>
+      <div>Adobe InDesign</div>
+      <div>Adobe Photoshop</div>
+      <div>Freihandzeichnen</div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projekte</h2>
+      <h3>Logo Design</h3>
+      <img src="logo1.jpg" alt="Logo 1">
+      <img src="logo2.jpg" alt="Logo 2">
+      <h3>Broschüren & Flyer</h3>
+      <img src="flyer1.jpg" alt="Flyer 1">
+      <img src="flyer2.jpg" alt="Flyer 2">
+      <h3>Illustrationen</h3>
+      <img src="illu1.jpg" alt="Illustration 1">
+      <img src="illu2.jpg" alt="Illustration 2">
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontakt</h2>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Dein Name" required>
+        <input type="email" placeholder="Deine E-Mail" required>
+        <textarea placeholder="Schreibe mir eine Nachricht..." rows="5" required></textarea>
+        <button type="submit">Senden</button>
+      </form>
+      <p>Email: noahkage@goo.com</p>
+      <p>Telefon: +49 (0) 123 456 777 55</p>
+      <p>Instagram: <a href="https://instagram.com/noahkage/nksto/juicystorchi" class="insta-link">@juicystorchi</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Noah Kage. Alle Rechte vorbehalten.
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
