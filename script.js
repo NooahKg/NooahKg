@@ -11,11 +11,7 @@ function navigateSection(direction) {
 
 function togglePlay() {
   const playBtn = document.getElementById("play-btn");
-  if (playBtn.textContent === "▶️") {
-    playBtn.textContent = "⏸️";
-  } else {
-    playBtn.textContent = "▶️";
-  }
+  playBtn.textContent = playBtn.textContent === "▶️" ? "⏸️" : "▶️";
 }
 
 function handleSubmit(event) {
